@@ -9,8 +9,7 @@ new Vue({
     },
     mounted(){
         let app = this
-        fetch('utils.php')
-        .then(function(response) {
+        fetch('utils.php').then(function(response) {
             return response.json();
         })
         .then(function(myJson) {
